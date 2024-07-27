@@ -25,6 +25,6 @@ btn.addEventListener("click", async () => {
     // signout per redirect kyu ho raha hy?
     console.log("Sign-out successful");
   } catch (error) {
-    console.log( error);
+    console.log(error);
   }
 });
