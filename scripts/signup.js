@@ -11,9 +11,12 @@ form.addEventListener("submit", async (event) => {
 
     // firebase se signup karne ka function
     const result = await createUserWithEmailAndPassword(auth, email, password);
-
+    message.innerText = "Sign Up Successfully";
     console.log(result);
+
+    event.target.reset();
   } catch (error) {
+    message.innerText = error.message;
     console.log("my error msg", error.message);
   }
 });
