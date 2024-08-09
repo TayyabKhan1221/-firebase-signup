@@ -1,14 +1,12 @@
 import { auth, signOut, onAuthStateChanged } from "./firebase.js";
 
 const userEmailDiv = document.querySelector("#user-email");
-
 const btn = document.querySelector("#logout-button");
 onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in
-    console.log(user);
-
     userEmailDiv.innerText = user.email;
+    const uid = user.uid;
   } else {
     window.location = "./login.html";
   }
