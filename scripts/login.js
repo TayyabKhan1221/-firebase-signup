@@ -1,18 +1,22 @@
 import { auth, signInWithEmailAndPassword } from "./firebase.js";
 
 const form = document.querySelector("#login-form");
+const msg = document.querySelector("#message");
 
 form.addEventListener("submit", async (event) => {
+  msg.innerText = "loading....";
   try {
     event.preventDefault();
 
-    const email = event.target.querySelector('input[type="email"]').value;
-    const password = event.target.querySelector('input[type="password"]').value;
-    // firebase se login karne ka function
-    const result = await signInWithEmailAndPassword(auth, email, password);
+    const email = event.target.children[0].value;
+    const password = event.target.children[1].value;
+    await signInWithEmailAndPassword(auth, email, password);
+    msg.innerText = "login successful";
+    window.location.href = "./dashboard.html";
 
     console.log(result);
   } catch (error) {
+    msg.innerText = error.message ||" error ";
     console.log("my error msg", error.message);
   }
 });

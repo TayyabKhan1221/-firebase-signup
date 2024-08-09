@@ -1,5 +1,11 @@
-/* Form Container Styling */
-#login-form {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif,serif;
+}
+/* Container Styling */
+.container {
   max-width: 400px;
   margin: 100px auto;
   padding: 20px;
@@ -10,15 +16,14 @@
 }
 
 /* Heading Styling */
-#login-form h2 {
+.container h2 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #333;
 }
 
 /* Input Fields Styling */
-#login-form input[type="email"],
-#login-form input[type="password"] {
+.input-field {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -27,8 +32,21 @@
   font-size: 16px;
 }
 
+/* Link Styling */
+#Account1 {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+#Account1:hover {
+  text-decoration: underline;
+}
+
 /* Button Styling */
-#login-form button[type="submit"] {
+.submit-button {
   width: 100%;
   padding: 12px;
   background-color: #007BFF;
@@ -40,26 +58,13 @@
   transition: background-color 0.3s ease;
 }
 
-#login-form button[type="submit"]:hover {
+.submit-button:hover {
   background-color: #0056b3;
-}
-
-/* Link Styling */
-#login-form a {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #007BFF;
-  text-decoration: none;
-}
-
-#login-form a:hover {
-  text-decoration: underline;
 }
 
 /* Message Styling */
 #message {
   margin-bottom: 15px;
   font-size: 14px;
-  color: red; /* Adjust this color based on the type of message */
+  color: red; /* You can adjust the color based on the type of message */
 }

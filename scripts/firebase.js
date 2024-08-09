@@ -1,26 +1,30 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-
 import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCHTIdX6fiTrbGY827mUksrJBaSblpYMCg",
-  authDomain: "signup-login-2023d.firebaseapp.com",
-  projectId: "signup-login-2023d",
-  storageBucket: "signup-login-2023d.appspot.com",
-  messagingSenderId: "836315492063",
-  appId: "1:836315492063:web:1854efc840fc7b69a0436a",
+  apiKey: "AIzaSyBbB2hj1xsKZYv60IEmuKFvFfvr8u5l7qU",
+  authDomain: "adddocs-ca8ef.firebaseapp.com",
+  projectId: "adddocs-ca8ef",
+  storageBucket: "adddocs-ca8ef.appspot.com",
+  messagingSenderId: "144176698271",
+  appId: "1:144176698271:web:f8a93b11ae90e0238d63aa",
 };
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-export { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword };
+export {
+  auth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+};
