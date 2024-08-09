@@ -25,7 +25,7 @@
 /* Input Fields Styling */
 .input-field {
   width: 100%;
-  padding: 12px;
+  padding: 10px 0;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -36,7 +36,7 @@
 #Account1 {
   display: block;
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 20px;
   color: #007BFF;
   text-decoration: none;
 }
@@ -65,6 +65,6 @@
 /* Message Styling */
 #message {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 20px;
   color: red; /* You can adjust the color based on the type of message */
 }

@@ -20,7 +20,7 @@
 #login-form input[type="email"],
 #login-form input[type="password"] {
   width: 100%;
-  padding: 12px;
+  padding: 10px 0;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -35,7 +35,7 @@
   border: none;
   border-radius: 4px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -48,7 +48,7 @@
 #login-form a {
   display: block;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 20px;
   color: #007BFF;
   text-decoration: none;
 }
@@ -60,6 +60,6 @@
 /* Message Styling */
 #message {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 20px;
   color: red; /* Adjust this color based on the type of message */
 }
